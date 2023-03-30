@@ -1,15 +1,24 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Texto from './Texto.js';
+import Article from './components/Article';
+import { useState } from 'react';
 
 function App() {
+  
+  const [nome, setNome] = useState('ok')
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Curso Danki Code</h1>
-        <Texto></Texto>
-      </header>
+        <h1>Turma 2022 ADS</h1>
+        <p>{nome}</p>
+        <hr/>
+
+
+        <Article
+          titulo = "Disciplina"
+          descricao = "Descrição da Disciplina"
+        />
     </div>
   );
 }
