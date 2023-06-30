@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
         <h1>Turma 2022 ADS</h1>
-        <p>{nome}</p>
+        <p>{nome}</p>  
         <hr/>
 
 
